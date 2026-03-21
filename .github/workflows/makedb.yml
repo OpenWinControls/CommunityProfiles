@@ -1,0 +1,38 @@
+name: db
+
+on:
+  push:
+    branches: [ "dev" ]
+
+  workflow_dispatch:
+
+jobs:
+  makedb:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@main
+
+      - name: build db
+        run: bash makedb.sh
+          
+      - name: remove old release
+        env:
+          GH_TOKEN: ${{ secrets.GTOK }}
+          GH_REPO: ${{ github.repository }}
+        run: gh release delete owcdb -y
+        continue-on-error: true
+
+      - name: publish release
+        env:
+          GH_TOKEN: ${{ secrets.GTOK }}
+          GH_REPO: ${{ github.repository }}
+        run: >
+          gh release create owcdb
+          owcdb.txt
+          --draft=false
+          --latest
+          -t "Community profiles db"
+          -n "This db is always up to date"
+
+      
