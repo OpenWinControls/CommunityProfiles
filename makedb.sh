@@ -9,6 +9,10 @@ for dir in *; do
     fi
 
     for f in "$dir"/*.yml; do
+        if [ ! -f "$f" ]; then
+            continue
+        fi
+
         echo "${f::-4}" >> owcdb.txt
     done
 done
