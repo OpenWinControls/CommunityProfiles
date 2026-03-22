@@ -1,0 +1,47 @@
+author: kylon
+game: "call of duty mw3 2011"
+desc: |
+    profile for default game settings, except:
+
+    Actions settings:
+    killstreak slot 2 = 5
+    killstreak slot 3 = 6
+    killstreak slot 4 = 7
+MAPPING_TYPE: 1
+A: SPACE
+B: C
+DPAD_DOWN: 6
+DPAD_LEFT: 3
+DPAD_RIGHT: 5
+DPAD_UP: 4
+L1: MOUSE_RIGHT
+L2: Q
+L3: LEFTSHIFT
+L_ANALOG_DOWN: S
+L_ANALOG_LEFT: A
+L_ANALOG_RIGHT: D
+L_ANALOG_UP: W
+MENU: ESC
+R1: MOUSE_LEFT
+R2: G
+R3: E
+SELECT: TAB
+START: F
+X: R
+Y: 1
+L4_K1: LEFTCTRL
+L4_K1_START_TIME: 0
+L4_K2: UNSET
+L4_K2_START_TIME: 0
+L4_K3: UNSET
+L4_K3_START_TIME: 0
+L4_K4: UNSET
+R4_K1: 7
+R4_K1_START_TIME: 0
+R4_K2: UNSET
+R4_K2_START_TIME: 0
+R4_K3: UNSET
+R4_K3_START_TIME: 0
+R4_K4: UNSET
+L4_MACRO_START_TIME: 300
+R4_MACRO_START_TIME: 300
