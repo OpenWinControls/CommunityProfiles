@@ -13,6 +13,6 @@ for dir in *; do
             continue
         fi
 
-        echo "${f::-4}" >> owcdb.txt
+        echo "${f::-5}" >> owcdb.txt
     done
 done
