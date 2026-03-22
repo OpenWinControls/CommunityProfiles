@@ -8,7 +8,7 @@ for dir in *; do
         continue
     fi
 
-    for f in "$dir"/*.yml; do
+    for f in "$dir"/*.yaml; do
         if [ ! -f "$f" ]; then
             continue
         fi
